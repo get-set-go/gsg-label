@@ -5,19 +5,16 @@ import ReactDOM from 'react-dom';
 import classNames from 'classnames';
 
 export default class GSGLabel extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-    let _bStyle = 'default';
-    _bStyle = classNames({
+    let _bClass = {
       'label': true,
       [`label-${this.props.bStyle}`]: true
-    });
+    };
+
+    _bClass = classNames(_bClass);
 
     return(
-      <span className={_bStyle}>{this.props.children}</span>
+      <span className={_bClass}>{this.props.children}</span>
     );
   }
 };
