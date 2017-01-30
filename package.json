@@ -1,6 +1,6 @@
 {
   "name": "gsg-label",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Get-Set-Go label component",
   "main": "dist/index.min.js",
   "scripts": {
